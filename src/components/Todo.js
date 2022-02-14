@@ -15,6 +15,9 @@ function Todo() {
       } else if (status === 404) {
         alert("Todo not found");
         window.location.href = "/";
+      } else if(status === 403) {
+          alert("Authentication error")
+          window.location.href = '/'
       } else {
         alert("An error occurred");
         console.log(response);
